@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><i>Etch-a-Sketch</i></h1>
+    <div class="container">
+        <div class="options">
+            <div class="title">Options</div>
+            <div>
+                <div class="subtitle">Number of pixel = <span class="pixels"></span></div>
+                <input type="range" min="1" max="100" class="setSquares"/>
+                <!-- <input type="text" class="setSquares"> -->
+            </div>
+            <div>
+                <div class="subtitle">Choose an option</div>
+                <select name="select" id="color">
+                    <option value="random">Random</option>
+                    <option value="selected">Selected</option>
+                    <option value="erase">Erase</option>
+                </select>
+            </div>
+            <div>
+                <div class="subtitle">Choose a color</div>
+                <input type="color" class="colorSelected">
+            </div>
+            <div>
+                <button class="resetSketch subtitle">Reset sketch</button>
+            </div>
+        </div>
+        <div class="grid"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
